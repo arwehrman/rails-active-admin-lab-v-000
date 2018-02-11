@@ -4989,3 +4989,45 @@ Completed 200 OK in 249ms (Views: 243.1ms | ActiveRecord: 1.6ms)
   [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "The Killers"], ["created_at", "2018-02-11 21:15:17.730900"], ["updated_at", "2018-02-11 21:15:17.730900"]]
   [1m[35m (3.1ms)[0m  commit transaction
   [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 10], ["title", "Mr. Brightside"], ["created_at", "2018-02-11 21:15:17.760689"], ["updated_at", "2018-02-11 21:15:17.760689"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "The Killers"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 10], ["title", "Jenny Was a Friend of Mine"], ["created_at", "2018-02-11 21:15:17.769767"], ["updated_at", "2018-02-11 21:15:17.769767"]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "Tommy Tutone"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "artists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Tommy Tutone"], ["created_at", "2018-02-11 21:15:17.778938"], ["updated_at", "2018-02-11 21:15:17.778938"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["artist_id", 11], ["title", "Jenny"], ["created_at", "2018-02-11 21:15:17.785161"], ["updated_at", "2018-02-11 21:15:17.785161"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1[0m  [["name", "Daft Punk"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "artists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Daft Punk"], ["created_at", "2018-02-11 21:15:17.790512"], ["updated_at", "2018-02-11 21:15:17.790512"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 12], ["title", "Around the World"], ["created_at", "2018-02-11 21:15:17.795117"], ["updated_at", "2018-02-11 21:15:17.795117"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "Daft Punk"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 12], ["title", "Harder, Better, Faster, Stronger"], ["created_at", "2018-02-11 21:15:17.801267"], ["updated_at", "2018-02-11 21:15:17.801267"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "Pixies"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "artists" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Pixies"], ["created_at", "2018-02-11 21:15:17.806874"], ["updated_at", "2018-02-11 21:15:17.806874"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["artist_id", 13], ["title", "Where is My Mind?"], ["created_at", "2018-02-11 21:15:17.811437"], ["updated_at", "2018-02-11 21:15:17.811437"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1[0m  [["name", "Pixies"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["artist_id", 13], ["title", "Gigantic"], ["created_at", "2018-02-11 21:15:17.817261"], ["updated_at", "2018-02-11 21:15:17.817261"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1[0m  [["name", "Pixies"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["artist_id", 13], ["title", "Monkey Gone to Heaven"], ["created_at", "2018-02-11 21:15:17.823060"], ["updated_at", "2018-02-11 21:15:17.823060"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mAdminUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "admin_users" WHERE "admin_users"."email" = 'admin@example.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
