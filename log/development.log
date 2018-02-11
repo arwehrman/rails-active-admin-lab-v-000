@@ -4307,3 +4307,17 @@ Started GET "/admin/songs" for 98.115.232.231 at 2018-02-11 21:02:53 +0000
 Cannot render console from 98.115.232.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by Admin::SongsController#index as HTML
   [1m[36mAdminUser Load (0.1ms)[0m  [1mSELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ?  ORDER BY "admin_users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "songs" LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "songs" LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "songs"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "songs" LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mSong Load (0.3ms)[0m  SELECT  "songs".* FROM "songs"  ORDER BY "songs"."id" desc LIMIT 30 OFFSET 0
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mArtist Load (0.3ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mArtist Load (0.1ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mArtist Load (0.4ms)[0m  [1mSELECT "artists".* FROM "artists"[0m
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/bundler/gems/activeadmin-97e0be6e64da/app/views/active_admin/resource/index.html.arb (236.4ms)
+Completed 200 OK in 244ms (Views: 238.6ms | ActiveRecord: 2.5ms)
