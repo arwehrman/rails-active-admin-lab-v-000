@@ -4448,3 +4448,20 @@ Processing by Admin::SongsController#index as HTML
   [1m[36mArtist Load (0.2ms)[0m  [1mSELECT "artists".* FROM "artists"[0m
   Rendered /usr/local/rvm/gems/ruby-2.3.1/bundler/gems/activeadmin-97e0be6e64da/app/views/active_admin/resource/index.html.arb (198.1ms)
 Completed 200 OK in 206ms (Views: 201.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/songs/18/edit" for 98.115.232.231 at 2018-02-11 21:06:30 +0000
+Cannot render console from 98.115.232.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/arwehrman/rails-active-admin-lab-v-000/app/admin/artists.rb:2: syntax error, unexpected ':', expecting keyword_end
+  permit_params :name :title
+                       ^):
+  app/admin/artists.rb:2: syntax error, unexpected ':', expecting keyword_end
+  config/routes.rb:3:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.5ms)
