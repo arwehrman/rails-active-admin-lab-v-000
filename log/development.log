@@ -4465,3 +4465,7 @@ SyntaxError (/home/arwehrman/rails-active-admin-lab-v-000/app/admin/artists.rb:2
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.5ms)
+
+
+Started GET "/admin/songs/18/edit" for 98.115.232.231 at 2018-02-11 21:06:50 +0000
+Cannot render console from 98.115.232.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
